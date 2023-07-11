@@ -6,7 +6,7 @@ const TestimonialClientes = () => {
     <section className="carousel">
     <div className="carouselDiv" >
       <div className="carousel-item">
-        <img src="./img/logoNestCircle.png" alt="Testimonial" className="testimonial-image" />
+        <img src="./img/logoNestSquare.png" alt="Testimonial" className="testimonial-image" />
         <h5 className="testimonial-text">
           Se busca confiança e um serviço que realmente gere resultados, está no lugar certo 
         </h5>
