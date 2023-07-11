@@ -16,7 +16,7 @@ header {
   align-items: center;
   justify-content: center;
 }
-.logo {
+.headerLogo {
   top: 1rem;
   left: 1rem;
   position: fixed;
@@ -157,7 +157,7 @@ header {
     width: 12rem;
     height: 12rem;
   }
-  .logo{
+  .headerLogo{
     position: relative;
   }
   .navbar{
