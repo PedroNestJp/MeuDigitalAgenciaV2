@@ -8,6 +8,7 @@ import Footer from './components/Footer'
 import AboutUs from './components/AboutUs'
 import '../src/App.css'
 import TestmonialsClientes from './components/TestmonialsClientes'
+import { Tv } from './test'
 
 
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
   return (
     <main>
     <div>
+      <Tv/>
       <Header />
       <FeaturesSection />
       <AboutUs />
