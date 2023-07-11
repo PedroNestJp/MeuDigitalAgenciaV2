@@ -1,0 +1,96 @@
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #faeefe;
+  padding: 1rem;
+}
+
+.features {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 1s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#webDevContainer {
+  display: flex;
+  background-color: white;
+  color: #000000;
+  max-width: 1000px;
+  padding: 1rem;
+  border-radius: 1rem;
+  align-items: center;
+}
+.webDevContent {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+#FeatureImgWebDev {
+  display: flex;
+  width: 350px;
+  height: 350px;
+}
+
+.featureDesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.h-1 {
+  color: #893389;
+  font-family: "Kumbh Sans-ExtraBold", Helvetica;
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.5rem;
+
+}
+
+.h-2 {
+    font-family: "Kumbh Sans-Medium", Helvetica;
+    line-height: 17px;
+}
+
+.featureBtn {
+  display: flex;
+  background-color: #b896b8;
+  border-radius: 1rem;
+  height: 2.5rem;
+  width: 10rem;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  border: none;
+
+}
+
+.featureBtnText {
+  color: #fafffe;
+  font-family: "Kumbh Sans-ExtraBold", Helvetica;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 800;
+  text-align: center;
+  width: 8rem;
+}
+
+@media (max-width:750px) {
+  .webDevContent{
+    flex-direction: column;
+  }
+  
+}

@@ -3,7 +3,7 @@ import styles from "../styles/Footer.css";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { collection, addDoc } from "firebase/firestore";
 import { getToken } from "firebase/messaging";
-import { db, messaging } from "../lib/firebase";
+import { db, messaging } from "../firebase";
 
 const Footer = () => {
   const [email, setEmail] = useState("");

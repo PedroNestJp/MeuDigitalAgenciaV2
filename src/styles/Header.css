@@ -10,7 +10,7 @@ header {
   width: 100%;
   height: 768px;
 }
-.container {
+.HeaderContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
