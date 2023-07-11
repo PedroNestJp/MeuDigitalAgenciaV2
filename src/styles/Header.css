@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700;800&display=swap");
+
+header {
+  background-image: url("../../public/img/ImgHeader.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-blend-mode: luminosity;
+  background-position: 0px 0px 0px;
+  background-size: contain;
+  width: 100%;
+  height: 768px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.logo {
+  top: 1rem;
+  left: 1rem;
+  position: fixed;
+  margin: 1rem;
+  background-attachment: scroll;
+}
+
+.logoImg {
+  width: 5rem;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  padding: 1rem;
+  justify-content: center;
+}
+/* .containerBox {
+} */
+.lists {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+
+  color: #ffffff;
+  font-family: "Kumbh Sans-SemiBold", Helvetica;
+  font-size: 13px;
+  font-weight: 600;
+}
+.list {
+  display: flex;
+  gap: 1rem;
+}
+.list2 {
+  display: flex;
+  gap: 1rem;
+}
+.services {
+  display: flex;
+}
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 12rem;
+  height: 12rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+}
+.cardImg {
+  width: 10rem;
+}
+
+.cardTitle{
+
+}
+.slogan{
+  border: 0px none;
+  height: 100px;
+  width: 414px;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 10rem;
+    height: 10rem;
+  }
+  .cardImg {
+    width: 8rem;
+  }
+}
+@media (max-width: 870px) {
+  .card {
+    width: 8rem;
+    height: 8rem;
+  }
+  .cardImg {
+    width: 6rem;
+  }
+  .navbar {
+    justify-content: flex-end;
+  }
+  .logoImg {
+    width: 5rem;
+  }
+  .sloganHeader,
+  .slogan .text-wrapper {
+    width: 16rem;
+    height: 8rem;
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 750px) {
+  .card {
+    width: 6rem;
+    height: 6rem;
+  }
+  .cardImg {
+    width: 4rem;
+  }
+  .navbar {
+    justify-content: flex-end;
+  }
+  .lists {
+    display: block;
+  }
+  header{
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+  }
+  .sloganHeader,
+  .slogan .text-wrapper {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cards{
+    flex-direction: column;
+  }
+  .cardImg {
+    width: 10rem;
+  }
+  .card{
+    width: 12rem;
+    height: 12rem;
+  }
+  .logo{
+    position: relative;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .slogan{
+    display: flex;
+    height: 126px;
+    width: 414px;
+    align-items: center;
+    justify-content: center;
+  }
+  .sloganHeader {
+   width: 0px;
+    height: 126px;
+}
+
+}
+
+.cardTitle {
+  line-height: 70%;
+  height: 5rem;
+  color: #893389
+}
+
+.sloganHeader,
+.slogan .text-wrapper {
+  color: #fafffe;
+  font-family: "Arial-Regular", Helvetica;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.sloganHeader {
+  width: 330px;
+  height: 90px;
+}
+.slogan .span {
+  font-family: "Arial-Bold", Helvetica;
+  font-weight: 700;
+}
+.slogan .text-wrapper-2 {
+  font-family: "Arial-Black", Helvetica;
+  font-weight: 900;
+}
