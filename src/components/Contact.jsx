@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import styles from "../styles/Contact.css";
 import { collection, addDoc } from "firebase/firestore";
 import {  getToken } from "firebase/messaging";
-import { db, messaging } from "../lib/firebase";
+import { db, messaging } from "../firebase";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -64,35 +64,35 @@ const Contact = () => {
   };
 
   return (
-    <section data-aos='fade-up' id="contact" className={styles.contact}>
-      <div className={styles.container}>
-        <h2 className={styles.sectionTitle}>Entre em Contato</h2>
-        <p className={styles.sectionDescription}>
+    <section data-aos='fade-up' id="contact" className='contact'>
+      <div className='contactContainer'>
+        <h2 className='sectionTitle'>Entre em Contato</h2>
+        <p className='sectionDescription'>
           Entre em contato conosco para obter mais informações ou solicitar um
           orçamento.
         </p>
-        <form className={styles.contactForm} onSubmit={handleFormSubmit}>
+        <form className='contactForm' onSubmit={handleFormSubmit}>
           <input
             type="text"
             placeholder="Seu nome"
-            className={styles.inputField}
+            className='inputField'
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
             placeholder="Seu e-mail"
-            className={styles.inputField}
+            className='inputField'
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
             placeholder="Sua mensagem"
-            className={styles.inputField}
+            className='inputField'
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button type="submit" className={styles.submitButton} >
+          <button type="submit" className='submitButton' >
             Enviar
           </button>
         </form>

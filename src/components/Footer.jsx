@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../styles/Footer.css";
+import  "../styles/Footer.css";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { collection, addDoc } from "firebase/firestore";
 import { getToken } from "firebase/messaging";
@@ -50,35 +50,35 @@ const Footer = () => {
   };
 
   return (
-    <footer className={styles.footer}>
-      <div className={styles.container}>
-        <div className={styles.contacts}>
-          <p className={styles.contatcText}>Contato</p>
+    <footer className='footer'>
+      <div className='footerContainer'>
+        <div className='contacts'>
+          <p className='contatcText'>Contato</p>
           <a href="https://mail.google.com/mail/u/0/#inbox">
-            <p className={styles.email}>meudigitalagencia@gmail.com</p>
+            <p className='email'>meudigitalagencia'@gmail.com</p>
           </a>
-          <p className={styles.phone}>83 9 86377109</p>
+          <p className='phone'>83 9 86377109</p>
         </div>
-        <form onSubmit={handleFormSubmit}>
+        <form onSubmit='handleFormSubmit'>
           <div
             style={{ textAlign: "center", lineHeight: "85%" }}
-            className={styles.newslatter}
+            className='newslatter'
           >
-            <p className={styles.signUpNewsLatter}>
+            <p className='signUpNewsLatter'>
               Inscreva-se na nossa Newsletter
             </p>
             <input
               type="text"
-              className={styles.submitEmail}
+              className='submitEmail'
               placeholder="Coloque seu e-mail aqui"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <button className={styles.btnFooter} type="submit">
+            <button className='btnFooter' type="submit">
               <IoPaperPlaneOutline />
             </button>
           </div>
-          <div className={styles.contactForm}></div>
+          <div className='contactForm'></div>
         </form>
         <div
           style={{
@@ -88,11 +88,11 @@ const Footer = () => {
           }}
         >
           <img
-            src="./images/logoMeuWhite.png"
+            src="./img/logoMeuWhite.png"
             alt="Logo"
-            className={styles.logo}
+            className='logo'
           />
-          <p className={styles.textBtnLogo}>Vamos evoluir juntos?</p>
+          <p className='textBtnLogo'>Vamos evoluir juntos?</p>
         </div>
       </div>
     </footer>

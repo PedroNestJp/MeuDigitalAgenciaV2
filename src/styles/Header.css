@@ -81,7 +81,14 @@ header {
 }
 
 .cardTitle{
-
+  color: #893389;
+  font-family: "Kumbh Sans-ExtraBold", Helvetica;
+  font-size: 13px;
+  font-weight: 800;
+  height: 26px;
+  letter-spacing: 0;
+  line-height: 13px;
+  text-align: center;
 }
 .slogan{
   border: 0px none;
