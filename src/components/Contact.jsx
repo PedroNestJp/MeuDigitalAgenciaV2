@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import styles from "../styles/Contact.css";
+import "../styles/Contact.css";
 import { collection, addDoc } from "firebase/firestore";
-import {  getToken } from "firebase/messaging";
-import { db, messaging } from "../firebase";
+// import {  getToken } from "firebase/messaging";
+// import { db, messaging } from "../firebase";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -22,7 +22,7 @@ const Contact = () => {
 
     try {
       // Salvar os dados no Firestore
-      await addDoc(collection(db, "messages"), {
+      await addDoc(collection('db', "messages"), {
         name: name,
         email: email,
         message: message,
@@ -30,13 +30,13 @@ const Contact = () => {
       });
 
       // Obter o token de envio de mensagens push
-      const token = await getToken(messaging);
+      // const token = await getToken(messaging);
 
       // Enviar mensagem push usando o serviço de mensagens push
       await fetch("https://fcm.googleapis.com/fcm/send", {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${token}`,
+          // Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -45,7 +45,7 @@ const Contact = () => {
               title: "Nova mensagem recebida",
               body: `Você recebeu uma nova mensagem de ${name}`,
             },
-            token: token,
+            // token: token,
           },
         }),
       });

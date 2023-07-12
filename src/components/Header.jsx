@@ -5,45 +5,40 @@ export const Header = () => {
   return (
     <header>
       <div className="HeaderContainer">
+        <div className="navbar">
+          <div className="listas">
+            
+          </div>
           <div className="headerLogo">
             <img className="logoImg" src="./img/logo.png" alt="" />
           </div>
-        <div className="navbar">
-          <div className="containerBox">
-            <div className="lists">
-              <div className="list">
-                <span className="listLinks"> Inicio </span>
-                <span className="listLinks"> Sobre </span>
-                <span className="listLinks"> Serviços </span>
-                <span className="listLinks"> Aentendimentos </span>
-              </div>
-              <div className="list2">
-                <span className="listLinks2">
-                  {" "}
-                  <img src="./img/instagram.svg" alt="linkIstagram" />{" "}
-                </span>
-                <span className="listLinks2">
-                  {" "}
-                  <img src="./img/whatsapp.svg" alt="LinkWhatsapp" />{" "}
-                </span>
-                <span> (83) 9 86377109 </span>
-              </div>
+          <div className="lists">
+            <div className="list">
+              <span className="listLinks"> Inicio </span>
+              <span className="listLinks"> Sobre </span>
+              <span className="listLinks"> Serviços </span>
+              <span className="listLinks"> Aentendimentos </span>
             </div>
+            <div className="list2">
+              <span className="listLinks2">
+                {" "}
+                <img src="./img/instagram.svg" alt="linkIstagram" />{" "}
+              </span>
+              <span className="listLinks2">
+                {" "}
+                <img src="./img/whatsapp.svg" alt="LinkWhatsapp" />{" "}
+              </span>
+              <span> (83) 9 86377109 </span>
+            </div>
+          </div>
+          <div className="containerBox">
             <div className="slogan">
               <div className="sloganHeader">
-                <span className="text-wrapper">A</span>
-                <span className="span">&nbsp;</span>
-                <span className="text-wrapper-2">
-                  IMPORTÂNCIA
-                  <br />
-                </span>
-                <span className="text-wrapper">DO</span>
-                <span className="text-wrapper-2">
-                  {" "}
-                  SEU <br />
-                  NEGÓCIO DIGITAL
-                  <br />
-                </span>
+                <span className="text-wrapper">A </span>
+                <span className="text-wrapper-2">IMPORTÂNCIA </span>
+                <span className="text-wrapper">DO </span>
+                <span className="text-wrapper-2">SEU </span>
+                <span className="text-wrapper-2">NEGÓCIO DIGITAL</span>
               </div>
             </div>
           </div>

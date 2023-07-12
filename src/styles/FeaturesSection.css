@@ -47,16 +47,9 @@
   gap: 5rem;
 }
 
-#FeatureImgWebDev {
+#FeatureImgWebDev, #FeatureImgSeo {
   display: flex;
-  width: 350px;
-  height: 350px;
-}
-
-#FeatureImgSeo{
-  display: flex;
-  width: 400px;
-  height: 350px;
+  width: 20rem;
 }
 
 .featureDesc {

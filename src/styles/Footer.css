@@ -41,6 +41,8 @@
   }
   
   .btnFooter{
-    visibility: hidden;
+    border: none;
+    background: transparent;
     cursor: pointer;
+    color: #ffffff;
   }
