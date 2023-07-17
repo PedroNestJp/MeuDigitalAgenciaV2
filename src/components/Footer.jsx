@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import  "../styles/Footer.css";
+import "../styles/Footer.css";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 // import { collection, addDoc } from "firebase/firestore";
 // import { getToken } from "firebase/messaging";
@@ -51,35 +51,36 @@ const Footer = () => {
   // };
 
   return (
-    <footer className='footer'>
-      <div className='footerContainer'>
-        <div className='contacts'>
-          <p className='contatcText'>Contato</p>
-          <a href="https://mail.google.com/mail/u/0/#inbox">
-            <p className='email'>meudigitalagencia'@gmail.com</p>
+    <footer className="footer">
+      <div className="footerContainer">
+        <div className="contacts">
+          <p className="contatcText">Contato</p>
+          <a
+            style={{ textDecoration: "none", color: "white" }}
+            href="https://mail.google.com/mail/u/0/#inbox"
+          >
+            <p className="email">meudigitalagencia'@gmail.com</p>
           </a>
-          <p className='phone'>83 9 86377109</p>
+          <p className="phone">83 9 86377109</p>
         </div>
-        <form onSubmit={'dando erro no chrome mobile : handleFormSubmit'}>
+        <form onSubmit={"dando erro no chrome mobile : handleFormSubmit"}>
           <div
             style={{ textAlign: "center", lineHeight: "85%" }}
-            className='newslatter'
+            className="newslatter"
           >
-            <p className='signUpNewsLatter'>
-              Inscreva-se na nossa Newsletter
-            </p>
+            <p className="signUpNewsLatter">Inscreva-se na nossa Newsletter</p>
             <input
               type="text"
-              className='submitEmail'
+              className="submitEmail"
               placeholder="Coloque seu e-mail aqui"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
-            <button className='btnFooter' type="submit"  >
-              <IoPaperPlaneOutline  />
+            <button className="btnFooter" type="submit">
+              <IoPaperPlaneOutline />
             </button>
           </div>
-          <div className='contactForm'></div>
+          <div className="contactForm"></div>
         </form>
         <div
           style={{
@@ -88,12 +89,8 @@ const Footer = () => {
             flexDirection: "column",
           }}
         >
-          <img
-            src="./img/logoMeuWhite.png"
-            alt="Logo"
-            className='logo'
-          />
-          <p className='textBtnLogo'>Vamos evoluir juntos?</p>
+          <img src="./img/logoMeuWhite.png" alt="Logo" className="logo" />
+          <p className="textBtnLogo">Vamos evoluir juntos?</p>
         </div>
       </div>
     </footer>
