@@ -3,6 +3,7 @@
     margin: 1rem;
     justify-content: center;
     background-color: #faeefe;
+    font-family: 'Kumbh Sans';
   }
   
   @media (max-width:700px) {

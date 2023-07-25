@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "../styles/FeaturesSection.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Btn from "./Btn";
 
 const FeaturesSection = () => {
   useEffect(() => {
@@ -30,24 +31,20 @@ const FeaturesSection = () => {
               fortalecerá sua marca, estabelecerá sua autoridade no setor e
               aumentará sua base de clientes.
             </p>
-            <button className="featureBtn">
-              <a href="#contact">
-                <p className="featureBtnText"> Fale Conosco </p>
-              </a>
-            </button>
+            <Btn />
           </div>
         </div>
       </div>
 
       <div className="featureContainer" id="seoContainer" data-aos="fade-up">
         <div className="seoContent">
-        <div className="imgFeature">
-          <img
-            className="featuresImg"
-            id="FeatureImgSeo"
-            alt="SEO img"
-            src="./img/seoImg.png"
-          />
+          <div className="imgFeature">
+            <img
+              className="featuresImg"
+              id="FeatureImgSeo"
+              alt="SEO img"
+              src="./img/seoImg.png"
+            />
           </div>
           <div className="featureDesc">
             <h1 className="h-1">Otimização de Busca</h1>
@@ -57,22 +54,20 @@ const FeaturesSection = () => {
               nos resultados de pesquisa e direcionar mais tráfego qualificado
               para o seu negócio.
             </p>
-            <button className="featureBtn">
-              <p className="featureBtnText"> Fale Conosco </p>
-            </button>
+            <Btn />
           </div>
         </div>
       </div>
 
       <div className="featureContainer" id="webDevContainer" data-aos="fade-up">
         <div className="webDevContent">
-        <div className="imgFeature">
-          <img
-            className="featuresImg"
-            id="FeatureImgWebDev"
-            alt="Social networks img"
-            src="./img/SocialNetworksImg.png"
-          />
+          <div className="imgFeature">
+            <img
+              className="featuresImg"
+              id="FeatureImgWebDev"
+              alt="Social networks img"
+              src="./img/SocialNetworksImg.png"
+            />
           </div>
           <div className="featureDesc">
             <h1 className="h-1">Gerenciamento de Redes Sociais</h1>
@@ -84,9 +79,7 @@ const FeaturesSection = () => {
               público-alvo, aumentando o reconhecimento da marca e
               impulsionando.
             </p>
-            <button className="featureBtn">
-              <p className="featureBtnText"> Fale Conosco </p>
-            </button>
+            <Btn />
           </div>
         </div>
       </div>
@@ -102,20 +95,17 @@ const FeaturesSection = () => {
             />
           </div>
           <div className="featureDesc">
-              <h1 className="h-1">Campanhas de Email Marketing</h1>
-              <p className="h-2">
-                Aproveite o poder do email marketing para se conectar com seus
-                clientes e impulsionar suas vendas. Desenvolvemos campanhas
-                personalizadas, segmentadas e impactantes que envolvem seus
-                clientes, promovem suas ofertas e aumentam a fidelidade à marca.
-              </p>
-              <button className="featureBtn">
-                <p className="featureBtnText"> Fale Conosco </p>
-              </button>
-            </div>
+            <h1 className="h-1">Campanhas de Email Marketing</h1>
+            <p className="h-2">
+              Aproveite o poder do email marketing para se conectar com seus
+              clientes e impulsionar suas vendas. Desenvolvemos campanhas
+              personalizadas, segmentadas e impactantes que envolvem seus
+              clientes, promovem suas ofertas e aumentam a fidelidade à marca.
+            </p>
+            <Btn />
           </div>
         </div>
-        
+      </div>
     </section>
   );
 };
