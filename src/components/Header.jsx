@@ -11,10 +11,9 @@ export const Header = () => {
             </div>
             <div className="lists">
               <div className="list">
-                <span className="listLinks"> Inicio </span>
                 <span className="listLinks"> Sobre </span>
                 <span className="listLinks"> Serviços </span>
-                <span className="listLinks"> Aentendimentos </span>
+                <span className="listLinks"> Atendimento </span>
               </div>
               <div className="list2">
                 <span className="listLinks2">

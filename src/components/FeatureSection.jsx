@@ -12,12 +12,14 @@ const FeaturesSection = () => {
     <section id="features" className="features">
       <div className="featureContainer" id="webDevContainer" data-aos="fade-up">
         <div className="webDevContent">
-          <img
-            className="featuresImg"
-            id="FeatureImgWebDev"
-            alt="Social networks img"
-            src="./img/webDevImg.png"
-          />
+          <div className="imgFeature">
+            <img
+              className="featuresImg"
+              id="FeatureImgWebDev"
+              alt="Social networks img"
+              src="./img/webDevImg.png"
+            />
+          </div>
           <div className="featureDesc">
             <h1 className="h-1">Criação de Sites Personalizados</h1>
             <p className="h-2">
@@ -39,12 +41,14 @@ const FeaturesSection = () => {
 
       <div className="featureContainer" id="seoContainer" data-aos="fade-up">
         <div className="seoContent">
+        <div className="imgFeature">
           <img
             className="featuresImg"
             id="FeatureImgSeo"
             alt="SEO img"
             src="./img/seoImg.png"
           />
+          </div>
           <div className="featureDesc">
             <h1 className="h-1">Otimização de Busca</h1>
             <p className="h-2">
@@ -62,12 +66,14 @@ const FeaturesSection = () => {
 
       <div className="featureContainer" id="webDevContainer" data-aos="fade-up">
         <div className="webDevContent">
+        <div className="imgFeature">
           <img
             className="featuresImg"
             id="FeatureImgWebDev"
             alt="Social networks img"
             src="./img/SocialNetworksImg.png"
           />
+          </div>
           <div className="featureDesc">
             <h1 className="h-1">Gerenciamento de Redes Sociais</h1>
             <p className="h-2">
@@ -87,26 +93,29 @@ const FeaturesSection = () => {
 
       <div className="featureContainer" id="seoContainer" data-aos="fade-up">
         <div className="seoContent">
-          <img
-            className="featuresImg"
-            id="FeatureImgSeo"
-            alt="SEO img"
-            src="./img/emMktImg.png"
-          />
+          <div className="imgFeature">
+            <img
+              className="featuresImg"
+              id="FeatureImgSeo"
+              alt="SEO img"
+              src="./img/emMktImg.png"
+            />
+          </div>
           <div className="featureDesc">
-            <h1 className="h-1">Campanhas de Email Marketing</h1>
-            <p className="h-2">
-              Aproveite o poder do email marketing para se conectar com seus
-              clientes e impulsionar suas vendas. Desenvolvemos campanhas
-              personalizadas, segmentadas e impactantes que envolvem seus
-              clientes, promovem suas ofertas e aumentam a fidelidade à marca.
-            </p>
-            <button className="featureBtn">
-              <p className="featureBtnText"> Fale Conosco </p>
-            </button>
+              <h1 className="h-1">Campanhas de Email Marketing</h1>
+              <p className="h-2">
+                Aproveite o poder do email marketing para se conectar com seus
+                clientes e impulsionar suas vendas. Desenvolvemos campanhas
+                personalizadas, segmentadas e impactantes que envolvem seus
+                clientes, promovem suas ofertas e aumentam a fidelidade à marca.
+              </p>
+              <button className="featureBtn">
+                <p className="featureBtnText"> Fale Conosco </p>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
+        
     </section>
   );
 };

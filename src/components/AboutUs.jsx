@@ -36,7 +36,7 @@ const AboutUs = () => {
           Tenha uma presença online sólida e conquiste mais clientes{" "}
         </h2>
         <a href="#contact">
-          <button className='btnCta'> Entre em contato </button>
+          <button className='submitButton'> Entre em contato </button>
         </a>
       </div>
     </section>
