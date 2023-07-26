@@ -84,6 +84,10 @@ header {
   background-color: white;
   border-radius: 1rem;
 }
+
+.cardImg:hover{
+  width: 90%;
+}
 .cardImg {
   width: 12rem;
 }

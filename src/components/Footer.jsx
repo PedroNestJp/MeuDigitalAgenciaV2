@@ -59,7 +59,7 @@ const Footer = () => {
             style={{ textDecoration: "none", color: "white" }}
             href="https://mail.google.com/mail/u/0/#inbox"
           >
-            <p className="email">meudigitalagencia'@gmail.com</p>
+            <p className="email">meudigitalagencia@gmail.com</p>
           </a>
           <p className="phone">83 9 86377109</p>
         </div>
