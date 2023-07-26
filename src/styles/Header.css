@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
+
+a{
+  text-decoration: none;
+}
 header {
   background-image: url("../../public/img/ImgHeader.png");
   background-repeat: no-repeat;
@@ -80,6 +84,7 @@ header {
   max-width: 20rem;
   /* max-height: 100vh; */
   width: 14rem;
+  height: 14rem;
   padding: 1rem;
   background-color: white;
   border-radius: 1rem;

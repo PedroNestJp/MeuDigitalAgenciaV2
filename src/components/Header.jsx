@@ -11,9 +11,15 @@ export const Header = () => {
           </div>
           <div className="lists">
             <div className="list">
-              <span className="listLinks"> Sobre </span>
-              <span className="listLinks"> Serviços </span>
-              <span className="listLinks"> Atendimento </span>
+              <a href="#aboutUs">
+                <span className="listLinks"> Sobre </span>
+              </a>
+              <a href="#features">
+                <span className="listLinks"> Serviços </span>
+              </a>
+              <a href="#contact">
+                <span className="listLinks"> Atendimento </span>
+              </a>
             </div>
             <div className="list2">
               <span className="listLinks2">
