@@ -22,37 +22,14 @@ const FeaturesSection = () => {
             />
           </div>
           <div className="featureDesc">
-            <h1 className="h-1">Criação de Sites Personalizados</h1>
+            <h1 className="h-1">Sites e Apps Personalizados</h1>
             <p className="h-2">
-              Desenvolvemos sites modernos, responsivos e personalizados para
-              atender às necessidades do seu negócio. Atraia e envolva seu
-              público-alvo por meio de conteúdo relevante e valioso. Nossa
-              equipe de redatores especializados criará conteúdo persuasivo que
-              fortalecerá sua marca, estabelecerá sua autoridade no setor e
-              aumentará sua base de clientes.
-            </p>
-            <Btn />
-          </div>
-        </div>
-      </div>
-
-      <div className="featureContainer" id="seoContainer" data-aos="fade-up">
-        <div className="seoContent">
-          <div className="imgFeature">
-            <img
-              className="featuresImg"
-              id="FeatureImgSeo"
-              alt="SEO img"
-              src="./img/seoImg.png"
-            />
-          </div>
-          <div className="featureDesc">
-            <h1 className="h-1">Otimização de Busca</h1>
-            <p className="h-2">
-              Aumente a visibilidade do seu site nos motores de busca.
-              Utilizamos técnicas avançadas de SEO para melhorar o seu ranking
-              nos resultados de pesquisa e direcionar mais tráfego qualificado
-              para o seu negócio.
+              Desenvolvemos sites e aplicaivos modernos, responsivos e
+              personalizados para atender às necessidades do seu negócio. Atraia
+              e envolva seu público-alvo por meio de conteúdo relevante e
+              valioso. Nossa equipe de redatores especializados criará conteúdo
+              persuasivo que fortalecerá sua marca, estabelecerá sua autoridade
+              no setor e aumentará sua base de clientes.
             </p>
             <Btn />
           </div>
@@ -60,7 +37,7 @@ const FeaturesSection = () => {
       </div>
 
       <div className="featureContainer" id="webDevContainer" data-aos="fade-up">
-        <div className="webDevContent">
+        <div className="webDevContent" id="socialNetwork">
           <div className="imgFeature">
             <img
               className="featuresImg"
@@ -85,7 +62,30 @@ const FeaturesSection = () => {
       </div>
 
       <div className="featureContainer" id="seoContainer" data-aos="fade-up">
-        <div className="seoContent">
+        <div className="seoContent" id="">
+          <div className="imgFeature">
+            <img
+              className="featuresImg"
+              id="FeatureImgSeo"
+              alt="SEO img"
+              src="./img/seoImg.png"
+            />
+          </div>
+          <div className="featureDesc">
+            <h1 className="h-1">Otimização de Busca</h1>
+            <p className="h-2">
+              Aumente a visibilidade do seu site nos motores de busca.
+              Utilizamos técnicas avançadas de SEO para melhorar o seu ranking
+              nos resultados de pesquisa na internete e direcionar mais tráfego
+              qualificado para o seu negócio.
+            </p>
+            <Btn />
+          </div>
+        </div>
+      </div>
+
+      <div className="featureContainer" id="seoContainer" data-aos="fade-up">
+        <div className="seoContent" id="emailMkt">
           <div className="imgFeature">
             <img
               className="featuresImg"
