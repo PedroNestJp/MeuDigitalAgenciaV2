@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300;400;500;600;700;800&display=swap");
 
-
-a{
+.listLinks {
   text-decoration: none;
+  color: #fafffe;
 }
+
 header {
   background-image: url("../../public/img/ImgHeader.png");
   background-repeat: no-repeat;
@@ -21,12 +22,6 @@ header {
   justify-content: center;
 }
 
-.headerLogo {
-  /* top: 1rem;
-  left: 1rem;
-  position: absolute;
-  margin: 1rem; */
-}
 
 .logoImg {
   width: 5rem;
@@ -101,11 +96,7 @@ header {
   line-height: 70%;
   text-align: center;
 }
-.slogan {
-  /* border: 0px none;
-  height: 100px;
-  width: 414px; */
-}
+
 
 @media (max-width: 1000px) {
   .card {
@@ -124,9 +115,7 @@ header {
   .cardImg {
     width: 6rem;
   }
-  /* .navbar {
-    justify-content: flex-end;
-  } */
+
   .logoImg {
     width: 5rem;
   }
@@ -190,9 +179,6 @@ header {
     height: 30vh;
   }
 
-  .headerLogo {
-    /* position: relative; */
-  }
   .navbar {
     display: flex;
     align-items: center;
