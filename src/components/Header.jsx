@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/Header.css";
+import "react-icons/fa"
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 export const Header = () => {
   return (
@@ -22,15 +24,27 @@ export const Header = () => {
               </a>
             </div>
             <div className="list2">
-              <span className="listLinks2">
-                {" "}
-                <img src="./img/instagram.svg" alt="linkIstagram" />{" "}
-              </span>
-              <span className="listLinks2">
-                {" "}
-                <img src="./img/whatsapp.svg" alt="LinkWhatsapp" />{" "}
-              </span>
-              <span> (83) 9 86377109 </span>
+              <div className="iconsSocial">
+                <a
+                  href="https://www.instagram.com/meuagencia/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="listLinks2">
+                    <FaInstagram/>
+                  </span>
+                </a>
+                <a
+                  href="http://wa.me/5583986377109"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span className="listLinks2">
+                    <FaWhatsapp/>
+                  </span>
+                  <span> (83) 9 86377109 </span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../styles/Footer.css";
 import { IoPaperPlaneOutline } from "react-icons/io5";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 // import { collection, addDoc } from "firebase/firestore";
 // import { getToken } from "firebase/messaging";
 // import { db, messaging } from "../firebase";
@@ -55,13 +56,30 @@ const Footer = () => {
       <div className="footerContainer">
         <div className="contacts">
           <p className="contatcText">Contato</p>
-          <a
-            style={{ textDecoration: "none", color: "white" }}
-            href="https://mail.google.com/mail/u/0/#inbox"
-          >
+          <a href="https://mail.google.com/mail/u/0/#inbox">
             <p className="email">meudigitalagencia@gmail.com</p>
           </a>
-          <p className="phone">83 9 86377109</p>
+          <div className="iconsSocial">
+            <a
+              href="https://www.instagram.com/meuagencia/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="listLinks2">
+                <FaInstagram />
+              </span>
+            </a>
+            <a
+              href="http://wa.me/5583986377109"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="listLinks2">
+                <FaWhatsapp />
+              </span>
+              <span> (83) 9 86377109 </span>
+            </a>
+          </div>
         </div>
         <form onSubmit={"dando erro no chrome mobile : handleFormSubmit"}>
           <div

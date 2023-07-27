@@ -5,6 +5,13 @@
   color: #fafffe;
 }
 
+.listLinks:hover {
+  color: #893389;
+}
+.listLinks2:hover {
+  color: #893389;
+}
+
 header {
   background-image: url("../../public/img/ImgHeader.png");
   background-repeat: no-repeat;
@@ -21,7 +28,6 @@ header {
   align-items: center;
   justify-content: center;
 }
-
 
 .logoImg {
   width: 5rem;
@@ -51,6 +57,7 @@ header {
   font-family: "Kumbh Sans-SemiBold", Helvetica;
   font-weight: 600;
 }
+
 .list {
   display: flex;
   gap: 1rem;
@@ -60,6 +67,12 @@ header {
   gap: 1rem;
   align-items: center;
   justify-content: center;
+}
+
+.iconsSocial {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
 }
 .services {
   display: flex;
@@ -85,7 +98,7 @@ header {
   border-radius: 1rem;
 }
 
-.cardImg:hover{
+.cardImg:hover {
   width: 90%;
 }
 .cardImg {
@@ -100,7 +113,6 @@ header {
   line-height: 70%;
   text-align: center;
 }
-
 
 @media (max-width: 1000px) {
   .card {
