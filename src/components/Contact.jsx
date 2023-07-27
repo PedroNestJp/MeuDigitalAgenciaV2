@@ -1,16 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/Contact.css";
 import { collection, addDoc } from "firebase/firestore";
-// import {  getToken } from "firebase/messaging";
-// import { db, messaging } from "../firebase";
-import { useEffect } from "react";
+import { getMessaging, getToken } from "firebase/messaging";
+import { db } from "../firebase";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
 const Contact = () => {
   useEffect(() => {
-    AOS.init({ duration: "2000" });
+    AOS.init({ duration: 2000 });
   }, []);
 
   const [name, setName] = useState("");
@@ -22,21 +20,23 @@ const Contact = () => {
 
     try {
       // Salvar os dados no Firestore
-      await addDoc(collection('db', "messages"), {
+      const messagesCollection = collection(db, "mensagens");
+      await addDoc(messagesCollection, {
         name: name,
         email: email,
         message: message,
-        timestamp: new Date(),
+        timestamp: new Date().toISOString(), // Converter a data para string antes de salvar
       });
 
       // Obter o token de envio de mensagens push
-      // const token = await getToken(messaging);
+      const messaging = getMessaging();
+      const token = await getToken(messaging);
 
       // Enviar mensagem push usando o serviço de mensagens push
       await fetch("https://fcm.googleapis.com/fcm/send", {
         method: "POST",
         headers: {
-          // Authorization: `Bearer ${token}`,
+          Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
@@ -45,12 +45,12 @@ const Contact = () => {
               title: "Nova mensagem recebida",
               body: `Você recebeu uma nova mensagem de ${name}`,
             },
-            // token: token,
+            token: token,
           },
         }),
       });
 
-      alert('recebemos seu email, entraremos em contato para passar mais informações em breve')
+      alert('Recebemos seu email! Entraremos em contato para passar mais informações em breve.');
       console.log("Mensagem push enviada com sucesso");
     } catch (error) {
       // Erro ao enviar mensagem push
