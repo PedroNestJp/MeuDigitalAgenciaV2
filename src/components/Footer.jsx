@@ -1,19 +1,23 @@
 import React, { useState } from "react";
 import "../styles/Footer.css";
 import { IoPaperPlaneOutline } from "react-icons/io5";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaCircleNotch } from "react-icons/fa";
 import { collection, addDoc } from "firebase/firestore";
 import { getToken } from "firebase/messaging";
 import { db, messaging } from "../firebase";
+import ModalAlert from "./ModalAlert";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isAlertOpen, setIsAlertOpen] = useState(false);
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      //     // Salvar os dados no Firestore
+      setIsLoading(true);
+      // Salvar os dados no Firestore
       await addDoc(collection(db, "newslatter"), {
         email: email,
         timestamp: new Date(),
@@ -32,32 +36,34 @@ const Footer = () => {
         body: JSON.stringify({
           message: {
             notification: {
-              title: "Nova mensagem recebida",
-              body: `Você recebeu uma nova mensagem de ${email}`,
+              title: "Nova assinatura na Newsletter",
+              body: `Novo e-mail cadastrado: ${email}`,
             },
             token: token,
           },
         }),
       });
-
-      //     // Sucesso ao enviar mensagem push
+      setIsLoading(false);
+      setIsAlertOpen(true);
       console.log("Mensagem push enviada com sucesso");
-      alert("Obrigado por assinar nossa newslatter");
     } catch (error) {
-      //     // Erro ao enviar mensagem push
       console.error("Erro ao enviar mensagem push:", error);
     }
-    //   // Limpar os campos após o envio
-    setEmail("");
+
+    setEmail(""); // Limpar o campo de e-mail após o envio
+  };
+
+  const handleAlertClose = () => {
+    setIsAlertOpen(false);
   };
 
   return (
     <footer className="footer">
       <div className="footerContainer">
         <div className="contacts">
-          <p className="contatcText">Contato</p>
+          <p className="contactText">Contato</p>
           <a
-            href="https://mail.google.com/mail/u/0/#inbox"
+            href="mailto:meudigitalagencia@gmail.com"
             target="_blank"
             rel="noreferrer"
           >
@@ -92,17 +98,21 @@ const Footer = () => {
           >
             <p className="signUpNewsLatter">Inscreva-se na nossa Newsletter</p>
             <input
-              type="text"
+              type="email"
               className="submitEmail"
               placeholder="Coloque seu e-mail aqui"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
             <button className="btnFooter" type="submit">
-              <IoPaperPlaneOutline />
+              {isLoading ? (
+                <FaCircleNotch className="icon-spin" />
+              ) : (
+                <IoPaperPlaneOutline />
+              )}
             </button>
           </div>
-          <div className="contactForm"></div>
         </form>
         <div
           style={{
@@ -115,6 +125,12 @@ const Footer = () => {
           <p className="textBtnLogo">Vamos evoluir juntos?</p>
         </div>
       </div>
+      {isAlertOpen && (
+        <ModalAlert
+          message="Seja bem vindo a nossa Newsletter!"
+          onClose={handleAlertClose}
+        />
+      )}
     </footer>
   );
 };

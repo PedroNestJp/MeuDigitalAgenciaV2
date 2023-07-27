@@ -1,68 +1,67 @@
 .main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: #FAEEFE;
-    padding: 1rem;
-    margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #faeefe;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .title {
-
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 12px;
-    line-height: 100%;
-    color: #000000;
+  margin: 1rem;
+  max-width: 1000px;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 100%;
+  text-align: center;
+  color: #000000;
 }
 
 .subTitle {
-
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 100%;
-    text-align: center;
-    color: #893389;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  color: #893389;
 }
 
 .text {
-    margin: 1rem;
-    max-width: 1000px;
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 100%;
-    text-align: center;
+  margin: 1rem;
+  max-width: 1000px;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 100%;
+  text-align: center;
 
-    color: #000000;
+  color: #000000;
 }
 
 .cta {
-
-    text-align: center;
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 25px;
-    color: #893389;
+  text-align: center;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 25px;
+  color: #893389;
 }
 
 .ctaTextSub {
-
-    margin: 1rem;
-    font-family: 'Kumbh Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 80%;
-    text-align: center;
-    color: #000000;
+  margin: 1rem;
+  font-family: "Kumbh Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 80%;
+  text-align: center;
+  color: #000000;
 }
 
 .submitButton {
@@ -82,7 +81,7 @@
   cursor: pointer;
   color: white;
 
-  font-family: 'Kumbh Sans';
+  font-family: "Kumbh Sans";
   font-style: normal;
   font-weight: 800;
   font-size: 17.7358px;
