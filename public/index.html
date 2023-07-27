@@ -5,13 +5,24 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="Meu Digital"
-      content="Meu Digital Agência"
-    />
+    <meta name="Meu Digital" content="Meu Digital Agência" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>Meu Digial</title>
   </head>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker
+          .register("/firebase-messaging-sw.js")
+          .then((registration) => {
+            console.log("ServiceWorker registrado com sucesso:", registration);
+          })
+          .catch((error) => {
+            console.error("Erro ao registrar ServiceWorker:", error);
+          });
+      });
+    }
+  </script>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

@@ -50,7 +50,9 @@ const Contact = () => {
         }),
       });
 
-      alert('Recebemos seu email! Entraremos em contato para passar mais informações em breve.');
+      alert(
+        "Recebemos seu email! Entraremos em contato para passar mais informações em breve."
+      );
       console.log("Mensagem push enviada com sucesso");
     } catch (error) {
       // Erro ao enviar mensagem push
@@ -64,35 +66,35 @@ const Contact = () => {
   };
 
   return (
-    <section data-aos='fade-up' id="contact" className='contact'>
-      <div className='contactContainer'>
-        <h2 className='sectionTitle'>Entre em Contato</h2>
-        <p className='sectionDescription'>
+    <section data-aos="fade-up" id="contact" className="contact">
+      <div className="contactContainer">
+        <h2 className="sectionTitle">Entre em Contato</h2>
+        <p className="sectionDescription">
           Entre em contato conosco para obter mais informações ou solicitar um
           orçamento.
         </p>
-        <form className='contactForm' onSubmit={handleFormSubmit}>
+        <form className="contactForm" onSubmit={handleFormSubmit}>
           <input
             type="text"
             placeholder="Seu nome"
-            className='inputField'
+            className="inputField"
             value={name}
             onChange={(e) => setName(e.target.value)}
           />
           <input
             type="email"
             placeholder="Seu e-mail"
-            className='inputField'
+            className="inputField"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
           <textarea
             placeholder="Sua mensagem"
-            className='inputField'
+            className="inputField"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
           ></textarea>
-          <button type="submit" className='submitButton' >
+          <button type="submit" className="submitButton">
             Enviar
           </button>
         </form>
